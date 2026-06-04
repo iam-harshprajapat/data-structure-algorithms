@@ -13,7 +13,7 @@ public class DsaApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(DsaApplication.class, args);
-        int[] x = {100, 80, 45, 0, 54, 24, 3, 458, 155, 3, 11};
+        int[] x = {100, 80, -45, 0, 54, -24, 3, 458, -155, 3, 11};
         RadixSort sort=new RadixSort();
         sort.radixSort(x);
         for (int j : x) {
