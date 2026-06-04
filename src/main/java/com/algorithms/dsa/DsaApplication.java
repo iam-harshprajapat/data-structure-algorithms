@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import static com.algorithms.dsa.sortings.InsertionSort.insertionSort;
 import static com.algorithms.dsa.sortings.SelectionSort.selectionSort;
+import static com.algorithms.dsa.sortings.LinearSort.linearSort;
 
 @SpringBootApplication
 public class DsaApplication {
@@ -12,7 +13,7 @@ public class DsaApplication {
     public static void main(String[] args) {
         SpringApplication.run(DsaApplication.class, args);
         int[] x = {100, 80, 45, 0, -54, 24, 3, 458, -155, 3, 11};
-        insertionSort(x);
+        linearSort(x);
         for (int j : x) {
             System.out.print(j + " ");
         }
